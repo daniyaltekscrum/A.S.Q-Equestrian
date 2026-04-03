@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>A.S.Q Equestrian &amp; Homestay Rawa | The Digital Stable</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-container": "#d4af37",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed": "#251a00",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#d0c5af",
+                        "on-surface": "#e5e2e1",
+                        "on-primary-container": "#554300",
+                        "on-primary-fixed": "#241a00",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-bright": "#3a3939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "background": "#131313",
+                        "secondary-container": "#474746",
+                        "on-secondary": "#313030",
+                        "surface-container-low": "#1c1b1b",
+                        "outline": "#99907c",
+                        "tertiary-fixed": "#ffdf94",
+                        "inverse-on-surface": "#313030",
+                        "surface": "#131313",
+                        "surface-container-highest": "#353534",
+                        "surface-tint": "#e9c349",
+                        "secondary": "#c8c6c5",
+                        "on-tertiary-container": "#574203",
+                        "on-primary": "#3c2f00",
+                        "inverse-surface": "#e5e2e1",
+                        "on-primary-fixed-variant": "#574500",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#b7b5b4",
+                        "on-tertiary-fixed-variant": "#594404",
+                        "tertiary-container": "#cdb068",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffe088",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-fixed-dim": "#e2c37a",
+                        "primary": "#f2ca50",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#ffdad6",
+                        "inverse-primary": "#735c00",
+                        "surface-dim": "#131313",
+                        "on-tertiary": "#3e2e00",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed-dim": "#e9c349",
+                        "outline-variant": "#4d4635",
+                        "tertiary": "#eacb81",
+                        "surface-variant": "#353534",
+                        "surface-container": "#201f1f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Playfair Display", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
+        }
+        
+        .text-gold {
+            color: #d4af37;
+        }
+        
+        .border-gold {
+            border-color: #4d4635;
+        }
+        /* Custom scrollbar for high-end feel */
+        
+         ::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #0e0e0e;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+        }
+    </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full flex justify-between items-center px-8 py-6 bg-[#131313]/80 backdrop-blur-md text-[#f2ca50] z-50 border-b border-[#4d4635]/30 shadow-[0_32px_64px_-12px_rgba(229,226,225,0.05)]">
+        <div class="text-xl font-bold tracking-tighter text-[#f2ca50] font-serif" style="">
+            A.S.Q Equestrian
+        </div>
+        <div class="hidden md:flex space-x-12">
+            <a class="uppercase tracking-[0.1em] text-[0.75rem] font-medium text-[#f2ca50] border-b-2 border-[#f2ca50] pb-1" href="#" style="">Experience</a>
+            <a class="uppercase tracking-[0.1em] text-[0.75rem] font-medium text-white/70 hover:text-[#f2ca50] transition-colors" href="#" style="">Homestay</a>
+            <a class="uppercase tracking-[0.1em] text-[0.75rem] font-medium text-white/70 hover:text-[#f2ca50] transition-colors" href="#" style="">Packages</a>
+            <a class="uppercase tracking-[0.1em] text-[0.75rem] font-medium text-white/70 hover:text-[#f2ca50] transition-colors" href="#" style="">Insights</a>
+            <a class="uppercase tracking-[0.1em] text-[0.75rem] font-medium text-white/70 hover:text-[#f2ca50] transition-colors" href="#" style="">FAQ</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <button class="gold-gradient px-6 py-3 text-on-primary text-[0.75rem] uppercase tracking-widest font-bold scale-95 active:duration-75 transition-all" style="">
+                    Book Your Slot
+                </button>
+        </div>
+    </nav>
+    <main>
+        <!-- Section 1: Cinematic Hero -->
+        <section class="relative h-screen flex items-center justify-start overflow-hidden px-8 md:px-24">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-black/40 z-10"></div>
+                <img class="w-full h-full object-cover grayscale-[20%]" data-alt="magnificent white horse in a dusty arena during a cinematic golden hour sunset with dramatic light rays and silhouettes" src="https://images.pexels.com/photos/19228334/pexels-photo-19228334.jpeg?_gl=1*q17f3a*_ga*NDY4NzkyMTM2LjE3NzAxMTM1NjU.*_ga_8JE65Q40S6*czE3NzUyMTY0NTkkbzQkZzEkdDE3NzUyMTY1NDgkajM3JGwwJGgw"
+                    style="">
+            </div>
+            <div class="relative z-20 max-w-4xl">
+                <span class="text-gold uppercase tracking-[0.4em] text-xs mb-6 block font-medium" style="">EST. 1995</span>
+                <h1 class="serif-display text-5xl md:text-8xl leading-tight text-on-surface mb-8" style="">
+                    Elite Horsemanship.
+                    <br>
+                    <span class="italic font-light" style="">Rustic Luxury.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface/80 max-w-2xl mb-12 font-light leading-relaxed" style="">
+                    Experience seamless, automated bookings for professional coaching and Homestay Rawa retreats.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <button class="gold-gradient px-10 py-5 text-on-primary text-sm uppercase tracking-widest font-bold transition-transform hover:scale-105" style="">
+                            Discover Experiences
+                        </button>
+                    <button class="border border-primary-container px-10 py-5 text-primary text-sm uppercase tracking-widest font-bold hover:bg-primary-container/10 transition-colors" style="">
+                            Book Stay
+                        </button>
+                </div>
+            </div>
+            <!-- Vertical Scroll Indicator -->
+            <div class="absolute bottom-12 right-12 hidden md:flex flex-col items-center gap-8">
+                <span class="uppercase tracking-[0.3em] text-[0.6rem] rotate-90 origin-right text-white/40" style="">SCROLL TO EXPLORE</span>
+                <div class="w-[1px] h-24 bg-gradient-to-b from-transparent to-primary"></div>
+            </div>
+        </section>
+        <!-- Section 2: The "Digital Stable" Advantage -->
+        <section class="py-32 px-8 md:px-24 bg-surface-container-lowest">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+                <div>
+                    <h2 class="serif-display text-4xl md:text-5xl mb-8" style="">
+                        Master the Art with
+                        <br>
+                        <span class="text-gold" style="">Coach Aqil</span>
+                    </h2>
+                    <p class="text-on-surface-variant leading-relaxed text-lg mb-12 max-w-md" style="">
+                        <span class="">From foundational riding to high-level equestrian excellence,</span>
+                        <span class=""> we provide the discipline and expertise you need to succeed.</span>
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6 group">
+                            <div class="p-4 bg-surface-container-high border-gold border-l-2 transition-all group-hover:bg-primary/10">
+                                <span class="material-symbols-outlined text-gold text-3xl" data-icon="calendar_today" style="">calendar_today</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-widest text-sm mb-2" style="">Tailored Progression</h4>
+                                <p class="text-sm text-on-surface/60 font-light" style="">
+                                    <span class="">Every rider follows a structured path,</span>
+                                    <span class=""> starting from our</span>
+                                    <b data-path-to-node="4,0,0" data-index-in-node="79" class="">Level 1 Private Coaching</b>
+                                    <span class=""> sessions.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="p-4 bg-surface-container-high border-gold border-l-2 transition-all group-hover:bg-primary/10">
+                                <span class="material-symbols-outlined text-gold text-3xl">skeleton</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-widest text-sm mb-2" style="">Specialized Hippotherapy</h4>
+                                <p class="text-sm text-on-surface/60 font-light" style="">
+                                    <span data-path-to-node="4,1,1,0">Experience the profound physical and mental benefits of therapeutic riding in a controlled, professional environment</span>
+                                    <span data-path-to-node="4,1,1,1">
+                                            <span class="citation-473 citation-end-473"></span>
+                                    </span>
+                                    <span data-path-to-node="4,1,1,2">.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="p-4 bg-surface-container-high border-gold border-l-2 transition-all group-hover:bg-primary/10">
+                                <span class="material-symbols-outlined text-gold text-3xl">shield_person</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-widest text-sm mb-2" style="">Safety First</h4>
+                                <p class="text-sm text-on-surface/60 font-light" style="">
+                                    <span data-path-to-node="4,2,1,0">Our facility is designed for precision, ensuring every session is conducted with world-class safety standards</span>
+                                    <span data-path-to-node="4,2,1,1">
+                                            <span class="citation-472 citation-end-472"></span>
+                                    </span>
+                                    <span data-path-to-node="4,2,1,2">.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative aspect-square">
+                    <div class="absolute -top-8 -left-8 w-48 h-48 border-t border-l border-primary/30 z-0"></div>
+                    <img class="w-full h-full object-cover z-10 relative" data-alt="minimalist interior of a modern luxury stable office with dark wood, gold hardware, and large windows overlooking the paddocks" src="https://images.pexels.com/photos/7999782/pexels-photo-7999782.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        style="">
+                    <div class="absolute -bottom-8 -right-8 w-48 h-48 border-b border-r border-primary/30 z-0"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3: Our Core Experiences (Bento Grid) -->
+        <section class="py-32 px-8 md:px-24">
+            <div class="mb-20 text-center">
+                <span class="text-gold uppercase tracking-[0.4em] text-xs mb-4 block font-medium" style="">CURATED SERVICES</span>
+                <h2 class="serif-display text-4xl md:text-6xl" style="">The Rawa Collection</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
+                <!-- Item 1: Coaching -->
+                <div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" data-alt="professional horse rider jumping an obstacle with focused precision in a high-end equestrian arena" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4fVXfxnvtWTCJzYEE3fmnP5PQuAzuGEXKMKYfN56q4P-Y8_FYDQ9nLq4y2VT_SuVDC5nUNyriDW12dk7gj0r-OX1ZIO-DNNk6lntOX99GjBEkNFtkc6F2Hei3qtRXk-k7T8jF1fgZnSzm_bxU0sP3LJ3iXDpTI9VPv6mwGkJF1Jw0-WodJPrVWv2GHZoVGUJ8b4DXXh-8Gxe_FoUucWSMGZ6kTiLN_FzWUP3xKmeJR2Bg_8pIydtb-MCvOCf9-AO5GsDpDbdujxU"
+                        style="">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <span class="text-gold text-xs uppercase tracking-widest mb-2 block" style="">Level 1 Elite</span>
+                        <h3 class="serif-display text-3xl mb-4" style="">Professional Coaching</h3>
+                        <p class="text-on-surface/70 mb-6 max-w-sm font-light" style="">Expert private sessions with Coach Aqil, focusing on posture, control, and equestrian excellence.</p>
+                        <div class="flex items-center gap-6">
+                            <span class="text-xl font-bold text-gold" style="">RM 150.00</span>
+                            <a class="text-xs uppercase tracking-widest border-b border-primary pb-1 hover:text-primary transition-colors" href="#" style="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2: Trial Classes -->
+                <div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-50" data-alt="close up of a rider's hand patting a horse's neck in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASsd17NVpWG_FHkBERgqW_h5geymlo8tMshkVsOKmquMQSKT1t-vIXmwBy6lqrvLSYcI09RzbmoOr5TiaTJdCjf6kPcrcaX_ELkqfHkbHmcNu4Fmt8h6edVoE3uI3_aF_eg6RIaqeqGx_htXNNoADObOAxbHkrgfWzeL5xBgPb6t-ANoeUcjQiAFyAdlA4V1aTjAx2vYW2OT3QabnmFSuKAAEugstKzCkoccfKGA0ZagWVUoxpnmwYnpk4IV1Y7ea5gSCx0QxnANo"
+                        style="">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h3 class="serif-display text-2xl mb-2" style="">Trial Classes</h3>
+                        <p class="text-sm text-on-surface/70 mb-4 font-light" style="">45-minute introductory sessions.</p>
+                        <span class="text-lg font-bold text-gold" style="">RM 100.00</span>
+                    </div>
+                </div>
+                <!-- Item 3: Hippotherapy -->
+                <div class="md:col-span-4 group relative overflow-hidden bg-surface-container-low">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-50" data-alt="gentle horse walking with a child during a therapeutic riding session in a quiet morning forest" src="https://langkawihorses.com/templates/yootheme/cache/f4/menu-riding-by-the-beach-at-island-horses-langkawi-jungle-beach-f4d6ca97.jpeg"
+                        style="">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h3 class="serif-display text-2xl mb-2" style="">Hippotherapy</h3>
+                        <p class="text-sm text-on-surface/70 mb-4 font-light" style="">Specialized therapeutic riding.</p>
+                        <span class="text-lg font-bold text-gold" style="">RM 80.00</span>
+                    </div>
+                </div>
+                <!-- Item 4: Homestay Rawa -->
+                <div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-60" data-alt="a rustic yet luxurious cabin interior with warm lighting, wood textures, and views of a green valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa7t8eDv49gUeWvnHvt7QMcdCAMjOKE0jHIg4iIKioRqn_mENr6D9McdHpdw7NkQ68LiO7yr2HEs_UCVgxDmWqqIQiwR28r95RZ5TVn8cRvZ44Jhk5HLIhqKcril6Z9TbIh0IufnBaitiG2dkKOGVslAlWyCaF4X_CndkDd8xQkYJbgC1snnEeVl-h2nIs6nJRTY2YKK7kvo38UEkFAK9TIL2Ty9yf44vC4P4ZcF1EuR367U1P8qsu2zAZoeFmsb3X5YOJVkA1GXY"
+                        style="">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <span class="text-gold text-xs uppercase tracking-widest mb-2 block" style="">The Retreat</span>
+                        <h3 class="serif-display text-3xl mb-4" style="">Homestay Rawa</h3>
+                        <p class="text-on-surface/70 mb-6 max-w-sm font-light" style="">Escape to a rustic getaway where the rhythm of the stable meets modern luxury comfort.</p>
+                        <button class="gold-gradient px-8 py-3 text-on-primary text-xs uppercase tracking-widest font-bold" style="">Book Your Stay</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 4: Membership & Validation Packages -->
+        <section class="py-32 px-8 md:px-24 bg-surface-container-lowest relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-high/20 skew-x-12 translate-x-24 -z-10"></div>
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-xl">
+                        <h2 class="serif-display text-4xl md:text-5xl mb-6 leading-tight text-on-surface" style="">
+                            Commitment to
+                            <br>
+                            <span class="italic" style="">Excellence.</span>
+                        </h2>
+                        <p class="text-on-surface-variant font-light" style="">Our validation packages are designed for dedicated riders seeking long-term progression and deeper connection with our horses.</p>
+                    </div>
+                    <div class="hidden md:block h-[1px] flex-grow bg-primary/20 mx-12 mb-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+                    <!-- Package A -->
+                    <div class="border border-outline-variant p-12 transition-all hover:bg-surface-container-low group">
+                        <div class="flex justify-between items-start mb-8">
+                            <h3 class="serif-display text-3xl" style="">Package A</h3>
+                            <span class="text-gold font-bold text-2xl" style="">RM 380.00</span>
+                        </div>
+                        <p class="uppercase tracking-widest text-[0.7rem] text-primary/70 mb-10 font-bold" style="">4 PRIVATE CLASSES</p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-center gap-4 text-sm text-on-surface/60" style="">
+                                <span class="material-symbols-outlined text-gold text-sm" data-icon="check" style="">check</span> Personalized Training Plan
+                            </li>
+                            <li class="flex items-center gap-4 text-sm text-on-surface/60" style="">
+                                <span class="material-symbols-outlined text-gold text-sm" data-icon="check" style="">check</span> Horse Bonding Sessions
+                            </li>
+                            <li class="flex items-center gap-4 text-sm text-on-surface/60" style="">
+                                <span class="material-symbols-outlined text-gold text-sm" data-icon="check" style="">check</span> Priority Slot Booking
+                            </li>
+                        </ul>
+                        <button class="w-full py-4 border border-primary text-primary text-xs uppercase tracking-widest font-bold group-hover:bg-primary group-hover:text-on-primary transition-all" style="">Select Membership</button>
+                    </div>
+                    <!-- Package B -->
+                    <div class="bg-primary p-12 relative overflow-hidden">
+                        <div class="absolute -top-4 -right-4 bg-on-primary text-primary px-6 py-2 uppercase tracking-tighter text-[0.6rem] font-bold rotate-45" style="">MOST POPULAR</div>
+                        <div class="flex justify-between items-start mb-8">
+                            <h3 class="serif-display text-3xl text-on-primary" style="">Package B</h3>
+                            <span class="text-on-primary font-bold text-2xl" style="">RM 750.00</span>
+                        </div>
+                        <p class="uppercase tracking-widest text-[0.7rem] text-on-primary/70 mb-10 font-bold" style="">8 PRIVATE CLASSES</p>
+                        <ul class="space-y-4 mb-12">
+                            <li class="flex items-center gap-4 text-sm text-on-primary/80 font-medium" style="">
+                                <span class="material-symbols-outlined text-on-primary text-sm" data-icon="star" data-weight="fill" style="">star</span> Advanced Equestrian Coaching
+                            </li>
+                            <li class="flex items-center gap-4 text-sm text-on-primary/80 font-medium" style="">
+                                <span class="material-symbols-outlined text-on-primary text-sm" data-icon="star" data-weight="fill" style="">star</span> Exclusive Stall Management Access
+                            </li>
+                            <li class="flex items-center gap-4 text-sm text-on-primary/80 font-medium" style="">
+                                <span class="material-symbols-outlined text-on-primary text-sm" data-icon="star" data-weight="fill" style="">star</span> Free Monthly Rawa Guest Pass
+                            </li>
+                        </ul>
+                        <button class="w-full py-4 bg-on-primary text-primary text-xs uppercase tracking-widest font-bold hover:bg-on-primary/90 transition-all" style="">Enroll Now</button>
+                    </div>
+                </div>
+                <!-- Add-ons -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 border-y border-outline-variant/30">
+                    <div class="flex justify-between items-center group cursor-pointer">
+                        <div class="flex items-center gap-6">
+                            <span class="material-symbols-outlined text-gold" data-icon="stroller" style="">stroller</span>
+                            <span class="font-bold uppercase tracking-widest text-sm" style="">Joyrides</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-sm font-light text-on-surface/60 italic" style="">Per session</span>
+                            <span class="text-gold font-bold" style="">RM 15.00</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center group cursor-pointer">
+                        <div class="flex items-center gap-6">
+                            <span class="material-symbols-outlined text-gold" data-icon="restaurant" style="">restaurant</span>
+                            <span class="font-bold uppercase tracking-widest text-sm" style="">Horse Feeding</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="text-sm font-light text-on-surface/60 italic" style="">Interactive</span>
+                            <span class="text-gold font-bold" style="">RM 12.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 5: The Stable Feed (Editorial Grid) -->
+        <section class="py-32 px-8 md:px-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <h2 class="serif-display text-4xl md:text-5xl leading-tight" style="">
+                    The Stable
+                    <br>
+                    <span class="italic" style="">Feed.</span>
+                </h2>
+                <a class="text-xs uppercase tracking-widest text-gold font-bold hover:underline underline-offset-8" href="#" style="">VIEW ALL ARTICLES</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Card 1 -->
+                <article class="group">
+                    <div class="aspect-[4/5] overflow-hidden mb-6">
+                        <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="dramatic close-up of a horse's eye with reflection of the sunset, high contrast black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmOHx_0UhgHiP2EbS2V-SdUFMDki_Ax_AH0rW0NeVYIzGVO_44fLxCIuhQdyTJWMq1XGV0H9Os_QTle-zqFkP8wAJBeI6LRhbLcAkEBcPyZVpYtrqc305S1-MLbZPlffwlNu7n72HPGZcjyuFeAt_9f2QzpNCL11smCZ026IB9FTqQOjX3L8t6eD_oGI3TvGDB9rsKjyI2_eLSsojBdY6TUqsejaV-8Ad_-vztnH1WCDBN8HJLeXJlkxHLyHQbDB8-dyPxqLjx3Jc"
+                            style="">
+                    </div>
+                    <span class="text-gold text-[0.65rem] uppercase tracking-widest font-bold mb-4 block" style="">EQUESTRIAN HEALTH</span>
+                    <h3 class="serif-display text-2xl mb-4 group-hover:text-gold transition-colors" style="">The Science of Hippotherapy</h3>
+                    <p class="text-sm text-on-surface/60 font-light leading-relaxed mb-6" style="">Understanding the neurological benefits of rhythmic equine movement for physical rehabilitation.</p>
+                    <span class="material-symbols-outlined text-primary" data-icon="arrow_forward" style="">arrow_forward</span>
+                </article>
+                <!-- Card 2 -->
+                <article class="group">
+                    <div class="aspect-[4/5] overflow-hidden mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="atmospheric landscape of misty mountains and rolling hills with a small secluded cabin in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0vDH6p1eSzh6jNU1bEdObrcthCd5Q4MxhbS0gK4iQXcTV_Vrb8myJA-oRhepib5-QvdD1olSoCIrAtGfuH7Fse7KdzbMOQ6ePGUcg1QzvSOpe6CwKmjHldz3khC_JrHz29jmbzlvNKEx0pKWzXRdQZzZcOH5nzQtpI1rb4bq8rcopO6URkvmgrd2P0RN9pKNSUtiBCqZa3JzopJ4JovgipqGTTkAVtDbs4q30_6INQZo4Ti1XlIp7U9jYE48vid8Gcl8AQdmShqU"
+                            style="">
+                    </div>
+                    <span class="text-gold text-[0.65rem] uppercase tracking-widest font-bold mb-4 block" style="">LIFESTYLE</span>
+                    <h3 class="serif-display text-2xl mb-4 group-hover:text-gold transition-colors" style="">The Rawa Retreat</h3>
+                    <p class="text-sm text-on-surface/60 font-light leading-relaxed mb-6" style="">A visual journey through the serenity of our Lenggeng sanctuary and its rustic architectural charm.</p>
+                    <span class="material-symbols-outlined text-primary" data-icon="arrow_forward" style="">arrow_forward</span>
+                </article>
+                <!-- Card 3 -->
+                <article class="group">
+                    <div class="aspect-[4/5] overflow-hidden mb-6">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80" data-alt="modern minimalist workspace with a sleek laptop displaying stable management software on a clean marble desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXUNjFvlSdIR6RCdZJtTRExbj6GoHiHNUPwLVS7AprWoVdyFlvhaAho4VEm1cux9fD_2PK6RAh_i3K4I3IgUz_yDdqJUhNPe2xCO3Jeip0JDYMoI4RZm2QGjahCxIyHvWXWHuPeQRzLQxEFb47_I3ma9ZBXbAqVUjzjFVTCfPqDMLJEP_QTtrzz8iNjDvg4-m9Q-xn0cbP3F2XiU-a3SkInho4IUE1I9fdQdGA-koFUBUvaNirkhLtPBvnnyYTsSe1WKIH8wyJKF4"
+                            style="">
+                    </div>
+                    <span class="text-gold text-[0.65rem] uppercase tracking-widest font-bold mb-4 block" style="">STABLETECH</span>
+                    <h3 class="serif-display text-2xl mb-4 group-hover:text-gold transition-colors" style="">Administrative Freedom</h3>
+                    <p class="text-sm text-on-surface/60 font-light leading-relaxed mb-6" style="">How our automated digital infrastructure allows riders to focus solely on the bond with their horse.</p>
+                    <span class="material-symbols-outlined text-primary" data-icon="arrow_forward" style="">arrow_forward</span>
+                </article>
+            </div>
+        </section>
+        <!-- Section 6: Interactive FAQ Section (Accordion) -->
+        <section class="py-32 px-8 md:px-24 bg-surface-container-low">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-gold uppercase tracking-[0.4em] text-xs mb-4 block font-medium" style="">CONCIERGE</span>
+                    <h2 class="serif-display text-4xl md:text-5xl" style="">Frequently Asked</h2>
+                </div>
+                <div class="space-y-6">
+                    <!-- Q1 -->
+                    <div class="bg-surface-container border-b border-outline-variant/30 py-6">
+                        <button class="w-full flex justify-between items-center text-left" style="">
+                                <span class="font-bold uppercase tracking-widest text-sm" style="">How do I book?</span>
+                                <span class="material-symbols-outlined text-gold" data-icon="add" style="">add</span>
+                            </button>
+                    </div>
+                    <!-- Q2 -->
+                    <div class="bg-surface-container border-b border-outline-variant/30 py-6">
+                        <button class="w-full flex justify-between items-center text-left" style="">
+                                <span class="font-bold uppercase tracking-widest text-sm" style="">What is the cancellation policy?</span>
+                                <span class="material-symbols-outlined text-gold" data-icon="add" style="">add</span>
+                            </button>
+                    </div>
+                    <!-- Q3 -->
+                    <div class="bg-surface-container border-b border-outline-variant/30 py-6">
+                        <button class="w-full flex justify-between items-center text-left" style="">
+                                <span class="font-bold uppercase tracking-widest text-sm" style="">What are the opening hours?</span>
+                                <span class="material-symbols-outlined text-gold" data-icon="add" style="">add</span>
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 7: Contact Form -->
+        <section class="py-32 px-8 md:px-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-24 max-w-7xl mx-auto">
+                <div>
+                    <h2 class="serif-display text-4xl md:text-6xl mb-8 leading-tight" style="">
+                        Begin Your
+                        <br>
+                        <span class="italic text-gold" style="">Journey.</span>
+                    </h2>
+                    <p class="text-on-surface/70 text-lg font-light leading-relaxed mb-12" style="">Whether you're looking to master showjumping or seeking a weekend of tranquility at Homestay Rawa, our team is ready to assist your arrival.</p>
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-[0.65rem] uppercase tracking-widest text-gold font-bold mb-2" style="">Location</p>
+                            <p class="font-medium" style="">Lenggeng, Negeri Sembilan, Malaysia</p>
+                        </div>
+                        <div>
+                            <p class="text-[0.65rem] uppercase tracking-widest text-gold font-bold mb-2" style="">Inquiries</p>
+                            <p class="font-medium" style="">+60172707251</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-high p-12">
+                    <form class="space-y-10">
+                        <div class="group">
+                            <label class="block text-[0.65rem] uppercase tracking-widest font-bold text-gold mb-4" style="">Your Name</label>
+                            <input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-all pb-4 text-on-surface placeholder-on-surface/20" placeholder="John Doe" type="text">
+                        </div>
+                        <div class="group">
+                            <label class="block text-[0.65rem] uppercase tracking-widest font-bold text-gold mb-4" style="">Email Address</label>
+                            <input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-all pb-4 text-on-surface placeholder-on-surface/20" placeholder="john@example.com" type="email">
+                        </div>
+                        <div class="group">
+                            <label class="block text-[0.65rem] uppercase tracking-widest font-bold text-gold mb-4" style="">Inquiry Type</label>
+                            <select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-all pb-4 text-on-surface">
+                                    <option class="bg-surface-container-high">Professional Coaching</option>
+                                    <option class="bg-surface-container-high">Homestay Rawa Stay</option>
+                                    <option class="bg-surface-container-high">Hippotherapy Session</option>
+                                    <option class="bg-surface-container-high">Membership Packages</option>
+                                </select>
+                        </div>
+                        <div class="group">
+                            <label class="block text-[0.65rem] uppercase tracking-widest font-bold text-gold mb-4" style="">Message</label>
+                            <textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-all pb-4 text-on-surface placeholder-on-surface/20" placeholder="Tell us about your experience level..." rows="4"></textarea>
+                        </div>
+                        <button class="gold-gradient w-full py-5 text-on-primary text-sm uppercase tracking-widest font-bold transition-transform active:scale-95" style="">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-20 px-12 grid grid-cols-1 md:grid-cols-3 gap-12 bg-[#0e0e0e] text-[#d4af37] border-t-0 relative overflow-hidden">
+        <div class="space-y-8">
+            <div class="text-lg font-serif text-[#f2ca50]" style="">A.S.Q Equestrian</div>
+            <p class="text-on-surface/50 text-sm leading-[1.6] font-light max-w-xs" style="">A premier digital stable and equestrian retreat focusing on technical mastery and serenity.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <span class="uppercase tracking-[0.1em] text-[0.65rem] text-white/40 block mb-6" style="">QUICK LINKS</span>
+                <a class="block text-sm hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all duration-500" href="#" style="">Experience</a>
+                <a class="block text-sm hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all duration-500" href="#" style="">Homestay</a>
+                <a class="block text-sm hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all duration-500" href="#" style="">Packages</a>
+            </div>
+            <div class="space-y-4">
+                <span class="uppercase tracking-[0.1em] text-[0.65rem] text-white/40 block mb-6" style="">SOCIAL</span>
+                <a class="block text-sm hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all duration-500" href="#" style="">Instagram</a>
+                <a class="block text-sm hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all duration-500" href="#" style="">Facebook</a>
+                <a class="block text-sm hover:text-[#f2ca50] underline-offset-4 hover:underline transition-all duration-500" href="#" style="">WhatsApp</a>
+            </div>
+        </div>
+        <div class="space-y-8 md:text-right">
+            <div>
+                <span class="uppercase tracking-[0.1em] text-[0.65rem] text-white/40 block mb-2" style="">OFFICE</span>
+                <p class="text-sm font-light" style="">Location: Lenggeng, N9</p>
+                <p class="text-sm font-light" style="">Phone: +60172707251</p>
+            </div>
+            <div class="pt-8">
+                <p class="text-[0.6rem] uppercase tracking-widest text-white/30" style="">© 2024 A.S.Q Equestrian &amp; Homestay Rawa. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- Subtle Branding Backdrop -->
+        <div class="absolute -bottom-10 -right-10 text-[10rem] font-serif text-white/5 select-none pointer-events-none uppercase italic" style="">ASQ</div>
+    </footer>
+</body>
+
+</html>
